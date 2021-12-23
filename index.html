@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Patrick+Hand&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet"> 
+    
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    
+    <!-- title -->
+    <title>Recipes 101</title>
+</head>
+
+
+<body>
+    <!-- heading -->
+    <div class="title-container">
+        <h1 id="h1-title"> Recipes 101</h1>
+        <h4>100+ recipes from around the world</h4>
+        <div id="top-line"></div>
+    </div>
+
+    <!-- menu -->
+    <div class="menu">
+        <div id="menu-inactive"> About </div>
+        <div id="menu-active"> Recipes </div>
+        <div id="menu-inactive"> Contact </div>
+    </div>
+
+
+    <div id="bottom-line"></div>
+
+    <!-- minimized menu -->
+    <nav class="minimized-menu" id="menu-hamburger">
+        <div>
+            <div id="min-menu"></div>
+            <div id="min-menu"></div>
+            <div id="min-menu"></div>
+        </div>
+    </nav>
+
+    <!-- minimized menu list -->
+    <aside class="menu-open">
+        <div class="menu-list">
+            <a id="menu-ind-list">About</a>
+            <a id="menu-ind-list">Recipes</a>
+            <a id="menu-ind-list">Contact</a>
+        </div>
+        <a id="menu-close">Close</a>
+    </aside>
+
+    <!-- landing page design -->
+    <div id="main-design">
+        <div id="intro">Travel around the world without leaving your kitchen <br> with these international recipes!</div>
+        <img class="bounce-box" src="images/globe.png" id="main-image">
+    </div>
+
+    <form id="searchBar">
+        <input type="text"
+                id="input-bar"
+                value=""
+                placeholder="Enter an ingredient"
+                />
+        <button type="submit" id="submit-button"><i class="fa fa-search" id="icon"></i></button>
+    </form>
+
+    <!-- search results -->
+    <div class="all-items">
+        <div class="ind-item-container">
+            <img class = "images" src="images/recipetemplate.jpg" id="urlID-one">
+            <div class="country-list"><i class="fa fa-globe" style="font-size:16px" id="globe-icon"></i><div class = "country" id="recipe-area-one">Country</div></div>
+            <div class = "recipe-names" id="recipe-name-one">Name</div>
+            <input class = "buttons" type="button" value="View Recipe" id="view-button-one"></input>
+        </div>
+
+        <div class="ind-item-container">
+            <img class = "images" src="images/recipetemplate.jpg" id="urlID-two">
+            <div class="country-list"><i class="fa fa-globe" style="font-size:16px" id="globe-icon"></i><div class = "country" id="recipe-area-one"></div><div class = "country" id="recipe-area-two">Country</div></div>
+            <div class = "recipe-names" id="recipe-name-two">Name</div>
+            <input class = "buttons" type="button" value="View Recipe" id="view-button-two"></input>
+        </div>
+
+        <div class="ind-item-container">
+            <img class = "images" src="images/recipetemplate.jpg" id="urlID-three">
+            <div class="country-list"><i class="fa fa-globe" style="font-size:16px" id="globe-icon"></i><div class = "country" id="recipe-area-one"></div><div class = "country" id="recipe-area-three">Country</div></div>
+            <div class = "recipe-names" id="recipe-name-three">Name</div>
+            <input class = "buttons" type="button" value="View Recipe" id="view-button-three"></input>
+        </div>
+        
+    </div>
+   
+
+    <!-- individual item 1 -->
+    <div class="form-popup">
+        <button id="item-close"><i class="fa fa-close"></i></button>
+        <h2 id="ind-recipe-name">Name</h2>
+        <img class="item-image" src="images/globe.png" id="ind-urlID">
+        <div class="video">
+            <img src="images/yticon.png" id="yt-image">
+            <div id="video-tutorial-text"> Watch video tutorial <a href="#" id="video-tutorial">here</a></div>
+        </div>
+
+        <div>
+            <p id="instructions-title">Instructions</p>
+            <h5 id="recipe-instructions"></h5>
+        </div>
+    </div>
+
+
+    <!-- javascript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
