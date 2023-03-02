@@ -1,5 +1,5 @@
 # Recipe-Website
-Final project for General Assembly's Part-Time Front-End Web Development Course
+Final project for General Assembly's Part-Time Front-End Web Development Bootcamp
 
 Requirements:
 - A Project made in HTML, CSS, and JS
